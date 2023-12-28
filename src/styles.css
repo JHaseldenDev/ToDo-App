@@ -1,0 +1,44 @@
+#app {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Add a default font */
+}
+
+#project-view, #todos-view {
+    width: 45%;
+    border: 1px solid #ddd; /* Add a border */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #eee; /* Add a bottom border to each item */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff; /* Add a background color */
+    color: white; /* Change text color */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
