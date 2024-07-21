@@ -33,6 +33,4 @@ export class Todo {
             this.checklist[index].completed = !this.checklist[index].completed;
         }
     }
-
-    // Additional methods can be added as needed.
 }

@@ -1,44 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 #app {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    font-family: 'Arial', sans-serif; /* Add a default font */
 }
 
-#project-view, #todos-view {
+#project-list, #todos-list {
     width: 45%;
-    border: 1px solid #ddd; /* Add a border */
+    border: 1px solid #ddd;
     padding: 10px;
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background */
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 li {
     margin-bottom: 10px;
     padding: 5px;
-    border-bottom: 1px solid #eee; /* Add a bottom border to each item */
+    border-bottom: 1px solid #eee;
 }
 
 li:last-child {
-    border-bottom: none; /* Remove bottom border for the last item */
+    border-bottom: none;
 }
 
 button {
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #007bff; /* Add a background color */
-    color: white; /* Change text color */
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 3px;
-    cursor: pointer; /* Change cursor on hover */
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3; /* Darken button on hover */
+    background-color: #0056b3;
+}
+
+li.high {
+    color: red;
+}
+
+li.medium {
+    color: orange;
+}
+
+li.low {
+    color: green;
 }

@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Todo List App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="app">
-        <div id="project-view">
+        <div id="projects">
+            <h2>Projects</h2>
             <ul id="project-list"></ul>
             <button id="add-project-btn">Add Project</button>
         </div>
-        <div id="todos-view">
+        <div id="todos">
+            <h2>Todos</h2>
             <ul id="todos-list"></ul>
+            <button id="add-todo-btn">Add Todo</button>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

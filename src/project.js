@@ -4,7 +4,6 @@ export class Project {
     constructor(name) {
         this.name = name;
         this.todos = []; // Array of Todo instances
-        console.log(Todo);
     }
 
     addTodo(todo) {
@@ -19,14 +18,28 @@ export class Project {
         }
     }
 
-    getTodo(index) {
+    getTodoByIndex(index) {
         if (index >= 0 && index < this.todos.length) {
             return this.todos[index];
         }
         return null;
     }
 
-    
+    getTodoByTitle(title) {
+        return this.todos.find(todo => todo.title === title) || null;
+    }
 
-    // Additional methods for project management can be added.
+    updateTodoTitle(index, newTitle) {
+        const todo = this.getTodoByIndex(index);
+        if (todo) {
+            todo.updateTitle(newTitle);
+        }
+    }
+
+    toggleTodoCompletion(index) {
+        const todo = this.getTodoByIndex(index);
+        if (todo) {
+            todo.toggleChecklistItem(0); // Assuming the first item indicates overall completion
+        }
+    }
 }
